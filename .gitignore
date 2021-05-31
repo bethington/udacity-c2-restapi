@@ -3,6 +3,7 @@
 
 *~
 *.sw[mnpcod]
+*.js
 *.log
 *.tmp
 *.tmp.*
@@ -18,6 +19,7 @@ npm-debug.log*
 .sass-cache/
 .tmp/
 .versions/
+src/config/
 coverage/
 www/
 node_modules/
