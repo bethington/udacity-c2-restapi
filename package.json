@@ -2,7 +2,7 @@
   "name": "udacity-c2-restapi",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
     "upgrade": "upgrade-node-modules",
     "start": "node .",
@@ -12,6 +12,7 @@
     "prod": "tsc && node ./www/server.js",
     "clean": "rimraf www/ || true",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "buildw": "wsl npm run clean && wsl tsc && wsl cp -rf src/config www/config && wsl cp .npmrc www/.npmrc && wsl cp package.json www/package.json && wsl zip -r ./www/Archive.zip www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
